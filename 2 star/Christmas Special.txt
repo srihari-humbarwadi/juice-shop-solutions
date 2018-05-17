@@ -1,0 +1,7 @@
+Vulnerability : SQLI
+
+on searching for the term vul' we get an SQL error on console
+SELECT * FROM Products WHERE ((name LIKE '%vul'%' OR description LIKE '%test'%') AND deletedAt IS NULL) ORDER BY name
+by observation we can work out the injection string 
+
+injection string : ')) -- -
