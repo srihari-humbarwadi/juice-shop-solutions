@@ -1,0 +1,5 @@
+URL Redirect
+https://github.com/bkimminich/juice-shop is a whitelisted URL, but input sanitizaion is poor.
+
+poc
+http://localhost:3000/redirect?to=http://sriharihumbarwadi.com/ https://github.com/bkimminich/juice-shop

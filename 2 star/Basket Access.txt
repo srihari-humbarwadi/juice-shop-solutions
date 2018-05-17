@@ -1,0 +1,2 @@
+change the value of 'bid' parameter in the session storage(inspect element)
+and then refresh the basket page

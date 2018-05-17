@@ -1,0 +1,3 @@
+<li class="dropdown" ng-show="scoreBoardMenuVisible">
+    <a href="#/score-board"><i class="fas fa-trophy fa-lg"></i><span translate="TITLE_SCORE_BOARD"></span></a>
+</li>

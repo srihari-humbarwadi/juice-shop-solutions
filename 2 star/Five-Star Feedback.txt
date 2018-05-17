@@ -1,0 +1,4 @@
+Login as the admin using sql injection
+
+visit : http://localhost:3000/#/administration
+Delete all the 5 star feedbacks
