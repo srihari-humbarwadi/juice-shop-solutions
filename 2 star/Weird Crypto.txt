@@ -1,0 +1,9 @@
+Weird Crypto
+
+using the same null byte injection, we gain access to 
+http://localhost:3000/ftp/package.json.bak
+
+This include all the modules used in development, here we find
+z85. 
+submit the feedback with the string 
+"z85" present in it to solve the challenge.

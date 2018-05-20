@@ -1,0 +1,7 @@
+monitoring the network calls made duing submission of the feedback form, we see that an xhr is sent to the following url
+http://localhost:3000/api/Feedbacks/
+with the payload.
+
+{UserId: 1, comment: "forging tests", captcha: "20", rating: 1, captchaId: 1}
+
+here we can manipulate the userid property and successfully forge our feedback
